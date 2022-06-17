@@ -1,4 +1,10 @@
-#include "shell.h"
+/*
+ * File: getline.c
+ * Auth: Flovian owiti
+ *       Victor azangu
+ */
+
+#include "main.h"
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 void assign_lineptr(char **lineptr, size_t *n, char *buffer, size_t b);

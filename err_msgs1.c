@@ -1,4 +1,10 @@
-#include "shell.h"
+/*
+ * File: err_msgs1.c
+ * Auth: Flovian owiti
+ *       Victor azangu
+ */
+
+#include "main.h"
 
 char *error_env(char **args);
 char *error_1(char **args);

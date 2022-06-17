@@ -1,11 +1,11 @@
-#include "shell.h"
+#include "main.h"
 
 void sig_handler(int sig);
 int execute(char **args, char **front);
 
 /**
- * sig_handler - Prints a new prompt upon a signal.
- * @sig: The signal.
+ * sig_handler - Prints a new prompt when signaled
+ * @sig: The signal
  */
 void sig_handler(int sig)
 {
@@ -17,12 +17,12 @@ void sig_handler(int sig)
 }
 
 /**
- * execute - Executes a command in a child process.
- * @args: An array of arguments.
- * @front: A double pointer to the beginning of args.
+ * execute - Executes a command in a child process
+ * @args: An array of arguments
+ * @front: A double pointer to the beginning of arguments.
  *
- * Return: If an error occurs - a corresponding error code.
- *         O/w - The exit value of the last executed command.
+ * Return: If an error occurs - a corresponding error code
+ *         O/w - The exit value of the last executed command
  */
 int execute(char **args, char **front)
 {
@@ -75,11 +75,11 @@ int execute(char **args, char **front)
 }
 
 /**
- * main - Runs a simple UNIX command interpreter.
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
+ * main - Runs a simple UNIX command interpreter
+ * @argc: The number of commandline arguments
+ * @argv: An array of pointers to the arguments
  *
- * Return: The return value of the last executed command.
+ * Return: The return value of the last executed command
  */
 int main(int argc, char *argv[])
 {

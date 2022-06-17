@@ -1,4 +1,10 @@
-#include "shell.h"
+/*
+ * File: helper.c
+ * Auth: Flovian owiti
+ *       Victor azangu
+ */
+
+#include "main.h"
 
 void free_args(char **args, char **front);
 char *get_pid(void);

@@ -1,4 +1,10 @@
-#include "shell.h"
+/*
+ * File: helpers_2.c
+ * Auth: Flovian owiti
+ *       Victor azangu
+ */
+
+#include "main.h"
 
 void handle_line(char **line, ssize_t read);
 ssize_t get_new_len(char *line);
